@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media 3</title>
+    <style>
+        .test >div{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            margin: 10px;
+            display: inline-block;
+        }
+        @media(min-width:1200px){
+            #demo{
+                background-color: yellow;
+            }
+        }
+        @media(max-width:1199px) and (min-width:761px){
+            #demo2{
+                background-color: red;
+            }
+        }
+        @media(max-width:760px){
+            #demo3{
+                background-color: aqua;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="test">
+        <div id="demo"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+    </div>
+</body>
+</html>

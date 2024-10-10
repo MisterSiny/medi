@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            margin: 5px;
+            display: inline-block;
+        }
+        @media(min-width:1200px){
+            #test1{
+                background-color: yellow;
+            }
+        }
+        @media(max-width: 1199px) and (min-width: 761px){
+            #test2{
+                background-color: black;
+            }
+        }
+        @media(max-width:760px) {
+            #test3{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo" id="test1"></div>
+    <div class="demo" id="test2"></div>
+    <div class="demo" id="test3"></div>
+    
+</body>
+</html>
